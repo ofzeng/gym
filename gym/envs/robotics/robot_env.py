@@ -89,6 +89,7 @@ class RobotEnv(gym.GoalEnv):
     def render(self, mode='human'):
         self._render_callback()
         if mode == 'rgb_array':
+            1/0
             self._get_viewer().render()
             # window size used for old mujoco-py:
             width, height = 3000, 1500
